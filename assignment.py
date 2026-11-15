@@ -12,12 +12,12 @@ def IsEmpty():
 
 
 def IsFull():
-return TopOfStack == 9
+    return TopOfStack == 9
 
 
 # Exercise 2
 def Push(Item):
-global Stack, TopOfStack
+    global Stack, TopOfStack
     if IsFull():
         return False
     TopOfStack += 1
@@ -37,21 +37,16 @@ global Stack, TopOfStack
 
 # Exercise 4
 def Peek():
-if IsEmpty():
+    if IsEmpty():
         return -1
     return Stack[TopOfStack]
 
 def Size():
     return TopOfStack + 1
 
-def Size():
-    # Write your code here
-    pass
-
-
 # Exercise 5
 def ReverseWord(Word):
-global Stack, TopOfStack
+    global Stack, TopOfStack
     TopOfStack = -1
     for letter in Word:
         Push(letter)
